@@ -1,0 +1,83 @@
+.recent-post-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
+  font-family: "PT Sans", sans-serif;
+}
+
+.title {
+  color: #394867;
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+}
+
+.recent-line {
+  margin: 0 1rem;
+}
+
+.recent-post-details > h3 {
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 1.2rem;
+}
+
+.recent-post-details > p {
+  font-size: 1rem;
+}
+
+.recent-post-img {
+  padding: 0 1rem 0 0;
+  height: 10rem;
+  width: 12rem;
+  object-fit: contain;
+}
+
+.recent-main-container {
+  position: relative;
+}
+
+.share-icon {
+  position: absolute;
+  color: dodgerblue;
+  padding: 0.4rem 1rem;
+}
+
+.article-detail {
+  display: flex;
+}
+
+.article-detail p:nth-child(1) {
+  margin: 0.4rem 0.6rem 0.4rem 0;
+}
+
+.article-detail p:nth-child(2),
+.article-detail p:nth-child(3) {
+  margin: 0.4rem 0.6rem 0.4rem 0;
+  color: gray;
+}
+
+.article-catagory {
+  color: dodgerblue;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.article-icon {
+  margin: 0 0.4rem;
+}
+
+.recent-descripton {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 1rem;
+  max-height: 2rem;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.read-more:hover {
+  text-decoration: none;
+}

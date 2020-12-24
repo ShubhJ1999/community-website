@@ -1,0 +1,12 @@
+.head {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.image {
+  background-image: url("../../images/bg.jpg");
+  height: 75vh;
+}
+
+.content {
+  font-family: "PT Sans", sans-serif;
+}
