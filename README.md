@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -74,3 +75,8 @@ Community Website
 
 An Open Source Project created by Tech-Enthusiasts collectively converging their skills into an effective and reliable solution with a scope from any local community to a global society.
 >>>>>>> f2b51d4bd8c7db0aa1b91dfd5d9932c4957250c6
+=======
+Community Website
+
+An Open Source Project created by Tech-Enthusiasts collectively converging their skills into an effective and reliable solution with a scope from any local community to a global society.
+>>>>>>> 566d664b746852f518963458bf7c160502b0db11
