@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Cover from "../Cover/Cover";
 import RecentPost from "../RecentPost/RecentPost";
 import PopularPost from "../PopularPost/PopularPost";
@@ -8,6 +8,18 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
+  const [catagory, setCatagory] = useState(true);
+
+  const changePosition = () => {
+    if (window.scrollY >= 1000) {
+      setCatagory(false);
+    } else {
+      setCatagory(true);
+    }
+  };
+
+  window.addEventListener("scroll", changePosition);
+
   return (
     <>
       <Navbar />
@@ -17,7 +29,11 @@ const Home = () => {
         </div>
 
         <div className="main-area">
-          <div className="interest-container">
+          <div
+            className={
+              catagory ? `interest-container active` : `interest-container`
+            }
+          >
             <h3 className="interest-catagory">Catagories</h3>
             <hr className="h-line" />
             <div className="interest-sub-container">
