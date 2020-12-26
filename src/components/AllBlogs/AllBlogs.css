@@ -1,0 +1,133 @@
+.containervk .warnvk {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.cover-imgvk img {
+  object-fit: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+/*.nav-pills{
+    border: 1px solid red !important;
+    text-align: center !important;
+    justify-content: center !important;
+    display: block;
+}*/
+
+.nav-pil-manvk .linkvk {
+  text-decoration: none;
+}
+
+.nav-pil-manvk .linkvk:hover {
+  border-bottom: 3px solid dodgerblue;
+}
+
+.containervk {
+  display: flex;
+  background: linear-gradient(#f1f6f9, white);
+  border: 1px solid #14274e;
+  position: sticky;
+  margin: -7% 8% 3% 8%;
+  padding-bottom: 1%;
+}
+.container-cardvk {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cat-menuvk {
+  grid-column: 1/-1;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.cat-menuvk ul {
+  text-align: center;
+  position: sticky;
+}
+
+.cat-menuvk ul li {
+  display: inline-block;
+  padding: 1rem 1rem 0 1rem;
+  font-size: 2rem;
+}
+
+.cat-menuvk hr {
+  border: 0.5px solid dodgerblue;
+}
+
+.cardvk {
+  box-shadow: 0 0 8px 4px rgba(161, 158, 158, 0.973);
+  border-radius: 1rem;
+  position: relative;
+  background-color: white;
+  margin: 1rem;
+}
+
+.cardvk:hover {
+  box-shadow: 0 0 10px 5px rgba(161, 158, 158, 0.973);
+  /* transform: scaleY(1.5);*/
+}
+
+.thumbvk img {
+  width: 100%;
+  height: 20rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card-bodyvk {
+  margin: 0.5rem 0rem 0.5rem 0.5rem;
+  padding: 5px;
+}
+
+.card-titlevk {
+  font-size: 1.5em;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.nav-pil-manvk li,
+.card-detailsvk-ul li,
+.card-engvk-ul li {
+  list-style: none;
+  display: inline;
+  color: #9ba4b4;
+  font-family: "Khula", sans-serif;
+}
+
+.card-contentvk p {
+  margin: 0.5rem 0rem 0rem 0rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  max-height: 32px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-family: "PT Sans", sans-serif;
+}
+
+@media (max-width: 540px) {
+  .container-cardvk {
+    grid-template-columns: 1fr;
+  }
+  .containervk {
+    margin: 0;
+  }
+  .cover-imgvk img {
+    display: none;
+  }
+  /* .cat-menuvk {
+    display: none;
+  } */
+  .cat-menuvk ul li {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 1023px) {
+  .container-cardvk {
+    grid-template-columns: 1fr 1fr;
+  }
+}

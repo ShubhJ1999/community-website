@@ -1,38 +1,34 @@
 export const Interests = [
   {
     id: 1,
-    name: "Tech",
+    name: "React",
   },
   {
     id: 2,
-    name: "Economy",
+    name: "PHP",
   },
   {
     id: 3,
-    name: "Marketing",
+    name: "JAVA",
   },
   {
     id: 4,
-    name: "Comics",
+    name: "PYTHON",
   },
   {
     id: 5,
-    name: "Art",
+    name: "IOT",
   },
   {
     id: 6,
-    name: "Modeling",
+    name: "DBMS",
   },
   {
     id: 7,
-    name: "Series",
+    name: "C",
   },
   {
     id: 8,
-    name: "Movies",
-  },
-  {
-    id: 9,
-    name: "Science",
+    name: "C++",
   },
 ];

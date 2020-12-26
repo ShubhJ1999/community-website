@@ -19,7 +19,7 @@ export const Posts = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero repudiandae maxime expedita autem nobis excepturi error nostrum, esse veritatis, vitae cupiditate ratione veniam est porro doloremque reiciendis molestiae impedit.",
     catagory: "Social",
     author: "Vishw Kadu",
-    date: new Date(),
+    date: new Date().toString(),
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const Posts = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero repudiandae maxime expedita autem nobis excepturi error nostrum, esse veritatis, vitae cupiditate ratione veniam est porro doloremque reiciendis molestiae impedit.",
     catagory: "Marketing",
     author: "Shubh Jani",
-    date: new Date(),
+    date: new Date().toString(),
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export const Posts = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero repudiandae maxime expedita autem nobis excepturi error nostrum, esse veritatis, vitae cupiditate ratione veniam est porro doloremque reiciendis molestiae impedit.",
     catagory: "Economy",
     author: "Aachal Panchal",
-    date: new Date(),
+    date: new Date().toString(),
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const Posts = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero repudiandae maxime expedita autem nobis excepturi error nostrum, esse veritatis, vitae cupiditate ratione veniam est porro doloremque reiciendis molestiae impedit.",
     catagory: "Tech",
     author: "Parth Maru",
-    date: new Date(),
+    date: new Date().toString(),
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ export const Posts = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero repudiandae maxime expedita autem nobis excepturi error nostrum, esse veritatis, vitae cupiditate ratione veniam est porro doloremque reiciendis molestiae impedit.",
     catagory: "Society",
     author: "Vishw Kadu",
-    date: new Date(),
+    date: new Date().toString(),
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ export const Posts = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero repudiandae maxime expedita autem nobis excepturi error nostrum, esse veritatis, vitae cupiditate ratione veniam est porro doloremque reiciendis molestiae impedit.",
     catagory: "Marketing",
     author: "Shubh Jani",
-    date: new Date(),
+    date: new Date().toString(),
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ export const Posts = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero repudiandae maxime expedita autem nobis excepturi error nostrum, esse veritatis, vitae cupiditate ratione veniam est porro doloremque reiciendis molestiae impedit.",
     catagory: "Economy",
     author: "Aachal Panchal",
-    date: new Date(),
+    date: new Date().toString(),
   },
   {
     id: 9,
@@ -96,6 +96,6 @@ export const Posts = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero repudiandae maxime expedita autem nobis excepturi error nostrum, esse veritatis, vitae cupiditate ratione veniam est porro doloremque reiciendis molestiae impedit.",
     catagory: "Tech",
     author: "Parth Maru",
-    date: new Date(),
+    date: new Date().toString(),
   },
 ];

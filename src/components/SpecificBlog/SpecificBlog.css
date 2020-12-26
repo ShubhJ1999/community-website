@@ -3,10 +3,10 @@
 }
 
 .image {
-  background-image: url("../../images/bg.jpg");
   height: 75vh;
 }
 
 .content {
+  position: relative;
   font-family: "PT Sans", sans-serif;
 }

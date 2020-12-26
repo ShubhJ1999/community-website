@@ -70,6 +70,11 @@
   font-size: 1.5rem;
 }
 
+.side-cata {
+  color: #394867;
+  text-decoration: none !important;
+}
+
 .see-more-link {
   text-decoration: none;
   color: gray;
@@ -103,6 +108,8 @@
 .bottom-link {
   margin: 1rem;
   padding: 1rem;
+  display: block;
+  text-align: center;
 }
 
 @media (max-width: 1025px) {

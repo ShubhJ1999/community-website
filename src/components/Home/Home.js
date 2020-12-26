@@ -39,9 +39,13 @@ const Home = () => {
             <div className="interest-sub-container">
               {Interests.map((item) => {
                 return (
-                  <p className="interest-link" key={item.id}>
-                    {item.name}
-                  </p>
+                  <Link
+                    to={`/all-blogs/${item.name}`}
+                    className="side-cata"
+                    key={item.id}
+                  >
+                    <p className="interest-link">{item.name}</p>
+                  </Link>
                 );
               })}
             </div>

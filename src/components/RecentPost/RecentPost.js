@@ -14,11 +14,7 @@ const RecentPost = () => {
         return (
           <div className="recent-post-container" key={index}>
             <div className="recent-post-imgArea">
-              <img
-                src={item.urlToImage}
-                alt="img"
-                className="recent-post-img"
-              />
+              <img src={item.thumb} alt="img" className="recent-post-img" />
             </div>
             <div className="recent-post-details">
               <h3>{item.title}</h3>
@@ -31,7 +27,7 @@ const RecentPost = () => {
                   <li>1 Jan 2020</li>
                 </p>
               </div>
-              <p className="recent-descripton">{item.description}</p>
+              <p className="recent-descripton">{item.content}</p>
               <Link to={`/specific-blog/${item.id}`} className="read-more">
                 Read More...
               </Link>
