@@ -149,4 +149,14 @@
   html {
     font-size: 45%;
   }
+
+  .image {
+    height: 25vh !important;
+  }
+
+  .footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
 }

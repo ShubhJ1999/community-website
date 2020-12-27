@@ -43,14 +43,9 @@ const SpecificBlog = () => {
         />
 
         <div className="container content justify-center max-w-5xl mx-auto -mt-44 mb-0">
-          <div className="bg-white w-auto p-8 md:p-24 text-gray-800 leading-normal shadow-md m-5">
-            <h1 className="my-5">{specificBlog.title}</h1>
-            <p
-              className="font-normal my-5"
-              style={{ "font-family": "PT Sans" }}
-            >
-              {specificBlog.content}
-            </p>
+          <div className="bg-white w-auto p-5 md:p-24 text-gray-800 leading-normal shadow-md m-5">
+            <h1>{specificBlog.title}</h1>
+            <p className="font-normal my-5 ">{specificBlog.content}</p>
             <div className="container flex justify-between space-x-1">
               <div className="flex justify-start">
                 <div>

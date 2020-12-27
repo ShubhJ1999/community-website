@@ -74,7 +74,6 @@ function AllBlogs({ cat }) {
       </>
     );
   } else {
-    //console.log(Blog.filter(catd => catd.cat.toLowerCase() == cat).map((a,key) => (a.id)));
     return (
       <>
         <ColorNavbar />

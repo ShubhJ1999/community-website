@@ -1,3 +1,7 @@
+.cover-imgvk {
+  margin-top: 2rem;
+}
+
 .containervk .warnvk {
   text-align: center;
   font-size: 2rem;
@@ -8,13 +12,6 @@
   width: 100%;
   height: 30rem;
 }
-
-/*.nav-pills{
-    border: 1px solid red !important;
-    text-align: center !important;
-    justify-content: center !important;
-    display: block;
-}*/
 
 .nav-pil-manvk .linkvk {
   text-decoration: none;
@@ -118,9 +115,6 @@
   .cover-imgvk img {
     display: none;
   }
-  /* .cat-menuvk {
-    display: none;
-  } */
   .cat-menuvk ul li {
     font-size: 1.5rem;
   }

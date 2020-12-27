@@ -20,9 +20,8 @@
   border-right: solid 2px rgba(255, 255, 255, 0.7);
   white-space: nowrap;
   overflow: hidden;
-  width: 22ch;
-  animation: typewriter 3s steps(18) 1s infinite,
-    cursor 500ms steps(18) infinite;
+  width: 16ch;
+  animation: typewriter 3s steps(18) 1s, cursor 500ms steps(18) infinite;
 }
 
 @keyframes typewriter {
@@ -30,7 +29,7 @@
     width: 0;
   }
   100% {
-    width: 18ch;
+    width: 16ch;
   }
 }
 
@@ -39,6 +38,6 @@
     border-right-color: rgba(255, 255, 255, 0.7);
   }
   100% {
-    border-right-color: transparent;
+    border-color: transparent;
   }
 }
