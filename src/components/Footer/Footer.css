@@ -1,34 +1,37 @@
-.footer {
-  display: flex;
-  color: gray;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1rem;
+.footer-main {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.left-area {
-  margin-left: 1rem;
+.footer-content-area {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
 }
 
-.social-icon {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  margin-right: 1.6rem;
-  cursor: pointer;
+.footer-border-bottom {
+  border-bottom: 1px solid white;
 }
 
-.social-icon:nth-child(1) {
-  color: #1773ea;
+.footer-links,
+.footer-links:hover {
+  text-decoration: none;
+  color: white;
 }
 
-.social-icon:nth-child(2) {
-  color: #d6426f;
+.image {
+  background-image: url("https://source.unsplash.com/user/erondu/daily");
 }
+.animate-bounce {
+  animation: bounce 3s infinite;
 
-.social-icon:nth-child(3) {
-  color: #009ded;
-}
-
-.social-icon:nth-child(4) {
-  color: #3fbe4f;
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-25%);
+      animationtimingfunction: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animationtimingfunction: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
 }

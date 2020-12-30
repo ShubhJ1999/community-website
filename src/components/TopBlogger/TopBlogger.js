@@ -7,10 +7,13 @@ const TopBlogger = () => {
       <img
         src="http://i.pravatar.cc/300"
         alt="top-blogger-cover"
-        className="w-20 h-20 rounded-full mx-auto"
+        className="w-20 h-20 rounded-full mx-auto top-blogger-cover"
       />
-      <h4>"Top Blogger of the Week"</h4>
-      <p>Lorem ipsum dolor sit amet consectetur</p>
+      <h4>Parth Maru</h4>
+      <p className="top-blogger-thought">
+        "You can't make a fan of everyone. Stay true to your story, characters,
+        music, art, or whatever it is you do."
+      </p>
     </div>
   );
 };

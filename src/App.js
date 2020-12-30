@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AllBlogs from "./components/AllBlogs/AllBlogs";
 import SpecificBlog from "./components/SpecificBlog/SpecificBlog";
 import BlogProvider from "./Context/BlogContext";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           </Switch>
         </div>
       </Router>
+      <Footer />
     </BlogProvider>
   );
 }

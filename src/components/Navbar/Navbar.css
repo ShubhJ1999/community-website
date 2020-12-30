@@ -54,7 +54,7 @@ light:#f0f5f8;
   width: fit-content;
 }
 
-/* Extra */
+/* Search Bar */
 
 .search-bar {
   outline: none;
@@ -68,13 +68,13 @@ input[type="search"] {
 }
 
 input[type="search"] {
-  background: #ededed
+  background: transparent
     url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat
     9px center;
-  border: solid 1px #ccc;
+  border: solid 1px transparent;
   padding: 8px 15px 8px 32px;
   width: 55px;
-  border-radius: 10em;
+  border-radius: 2rem;
   transition: all 0.5s;
 }
 
