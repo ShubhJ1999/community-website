@@ -36,6 +36,12 @@
   margin-bottom: 0;
 }
 
+.all-blogs-link {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 @media (max-width: 450px) {
   .top-blogger-area {
     display: none;

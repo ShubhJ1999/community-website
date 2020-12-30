@@ -31,6 +31,12 @@
   font-family: "PT Sans", sans-serif;
 }
 
+.specific-link,
+.specific-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
 /* .recent-post {
   position: relative;
   color: white;

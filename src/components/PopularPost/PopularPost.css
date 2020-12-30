@@ -65,3 +65,9 @@
 .share-icon {
   cursor: pointer;
 }
+
+.pop-specific-link,
+.pop-specific-link:hover {
+  color: black;
+  text-decoration: none;
+}

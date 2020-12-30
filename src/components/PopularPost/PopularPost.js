@@ -12,13 +12,20 @@ const PopularPost = () => {
         return (
           <div className="popular-post-container" key={index}>
             <div className="popular-post-img">
-              <img src={item.thumb} alt="img" className="popular-image" />
+              <Link to={`/specific-blog/${item.id}`}>
+                <img src={item.thumb} alt="img" className="popular-image" />
+              </Link>
             </div>
             <div className="popular-post-details">
               <div className="popular-article-detail">
                 <p className="popular-article-catagory">Technology</p>
               </div>
-              <h4>{item.title}</h4>
+              <Link
+                to={`/specific-blog/${item.id}`}
+                className="pop-specific-link"
+              >
+                <h4>{item.title}</h4>
+              </Link>
               <p className="popular-description">{item.content}</p>
               <p>1 Dec • 1 min</p>
             </div>

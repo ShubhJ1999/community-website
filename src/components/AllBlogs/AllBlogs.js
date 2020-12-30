@@ -3,7 +3,7 @@ import "./AllBlogs.css";
 import { Blog } from "../../constants/BlogData";
 import bg from "../../images/all-bg.jpg";
 import { Link } from "react-router-dom";
-import ColorNavbar from "../ColorNavbar/ColorNavbar";
+import Navbar from "../Navbar/Navbar";
 
 function AllBlogs({ cat }) {
   var d = Blog.filter((catd) => catd.cat.toLowerCase() === cat).length;
@@ -11,7 +11,7 @@ function AllBlogs({ cat }) {
   if (d === 0) {
     return (
       <>
-        <ColorNavbar />
+        <Navbar />
 
         <div className="cover-imgvk">
           <img
@@ -76,7 +76,7 @@ function AllBlogs({ cat }) {
   } else {
     return (
       <>
-        <ColorNavbar />
+        <Navbar />
 
         <div className="cover-imgvk">
           <img className="cover-imgvk" src={bg} alt="cover-img" />

@@ -1,43 +1,15 @@
-.star {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
-}
-
-.c-bg {
-  position: relative;
-}
-
-.line {
-  color: white;
+.carousel-caption {
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-  font-size: 2.5rem;
   text-align: center;
-  border-right: solid 2px rgba(255, 255, 255, 0.7);
-  white-space: nowrap;
-  overflow: hidden;
-  width: 16ch;
-  animation: typewriter 3s steps(18) 1s, cursor 500ms steps(18) infinite;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.stretched-link,
+.stretched-link:hover {
+  text-decoration: none;
+  color: white;
 }
 
-@keyframes typewriter {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 16ch;
-  }
-}
-
-@keyframes cursor {
-  0% {
-    border-right-color: rgba(255, 255, 255, 0.7);
-  }
-  100% {
-    border-color: transparent;
-  }
+.cover-back {
+  width: 100% !important;
 }

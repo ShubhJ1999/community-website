@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import "./SpecificBlog.css";
 import { useParams } from "react-router-dom";
 import { BlogContext } from "../../Context/BlogContext";
-import ColorNavbar from "../ColorNavbar/ColorNavbar";
+import PopularPost from "../PopularPost/PopularPost";
+import Navbar from "../Navbar/Navbar";
 
 const SpecificBlog = () => {
   const { id } = useParams();
@@ -13,8 +14,8 @@ const SpecificBlog = () => {
 
   return (
     <>
-      <ColorNavbar />
-      <div className="bg-white font-sans leading-normal tracking-normal">
+      <Navbar />
+      <div className="bg-white font-sans leading-normal tracking-normal container">
         <div className="text-center items-center justify-center pt-16 md:pt-22 font-medium head">
           <div className="container flex justify-around font-sans rounded mt-2 p-4 pb-0">
             <div className="flex justify-start space-x-6">
@@ -122,6 +123,11 @@ const SpecificBlog = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container">
+        <h3 className="pop-title">Trending</h3>
+        <hr />
+        <PopularPost />
       </div>
     </>
   );

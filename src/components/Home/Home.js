@@ -6,11 +6,13 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import TopBlogger from "../TopBlogger/TopBlogger";
+import Cover from "../Cover/Cover";
 
 const Home = () => {
   return (
     <>
       <Navbar />
+      <Cover />
       <div className="container">
         <div className="first-section">
           <div className="recent-post-area">
@@ -29,6 +31,9 @@ const Home = () => {
           <h3 className="all-title">Recent Posts</h3>
           <hr className="recent-line" />
           <SomeBlogs />
+          <Link to="/all-blogs" className="all-blogs-link">
+            <p>See More...</p>
+          </Link>
         </div>
       </div>
     </>
