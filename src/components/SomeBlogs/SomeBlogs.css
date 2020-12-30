@@ -1,53 +1,56 @@
-.popular-main-container {
+.some-main-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   font-family: "PT Sans", sans-serif;
   align-items: center;
 }
 
-.popular-post-container {
+.some-post-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   margin: 1rem;
   border-radius: 10px;
   background-color: white;
+  align-items: center;
 }
 
-.popular-post-img {
+.some-post-img {
   text-align: center;
   border-radius: 10px;
 }
 
-.popular-image {
+.some-image {
   border-radius: 5px;
-  height: 10rem;
+  height: 8rem;
   width: 100%;
 }
 
-.popular-article-detail {
+.some-article-detail {
   display: flex;
 }
 
-.popular-article-catagory {
+.some-article-catagory {
   color: dodgerblue;
   cursor: pointer;
   margin-bottom: 0.3rem;
 }
 
-.popular-article-catagory {
+.some-article-catagory {
   color: dodgerblue;
   font-weight: 600;
   cursor: pointer;
 }
 
-.popular-post-details {
+.some-post-details {
   padding: 0.7rem;
 }
 
-.popular-post-details > h4 {
+.some-post-details > h4 {
   font-family: "M PLUS 1p", sans-serif;
   font-size: 1.2rem;
 }
 
-.popular-description {
+.some-description {
   margin-bottom: 0.5rem;
   overflow: hidden;
   text-overflow: ellipsis;

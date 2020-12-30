@@ -1,29 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [navColor, setNavColor] = useState(false);
-
-  const changeBackground = () => {
-    if (window.scrollY >= 250) {
-      setNavColor(true);
-    } else {
-      setNavColor(false);
-    }
-  };
-
-  window.addEventListener("scroll", changeBackground);
-
   return (
     <>
-      <nav
-        className={`${
-          navColor
-            ? "navbar navbar-expand-lg nav-main active fixed-top "
-            : "navbar navbar-expand-lg  nav-main fixed-top"
-        }`}
-      >
+      <nav className="navbar navbar-expand-lg nav-main active fixed-top">
         <Link className="navbar-brand" to="/">
           Blog-Site
         </Link>
@@ -42,11 +24,9 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarToggleContent">
           <ul className="navbar-nav mx-auto nav-link-collection">
-            <li className="nav-item active">
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </li>
+            <form id="search-b">
+              <input type="search" className="search-bar" />
+            </form>
             <li className="nav-item">
               <Link to="/all-blogs" className="nav-link">
                 All Blogs
@@ -56,12 +36,6 @@ const Navbar = () => {
               <Link to="/" className="nav-link">
                 Our Story
               </Link>
-            </li>
-            <li>
-              <div className="s-bar">
-                <input type="text" className="s-input" maxLength="18" />
-                <i className="fas fa-search s-icon"></i>
-              </div>
             </li>
             <button className="btn btn-success ml-5 write-blog">
               Write Blog
