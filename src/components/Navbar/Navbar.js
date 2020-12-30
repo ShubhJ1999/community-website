@@ -5,11 +5,13 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg nav-main active fixed-top">
+      <nav className="navbar navbar-expand-lg nav-main active">
         <Link className="navbar-brand" to="/">
           Blog-Site
         </Link>
-
+        <form id="search-b">
+          <input type="search" className="search-bar" />
+        </form>
         <button
           className="navbar-toggler toggle-area"
           type="button"
@@ -24,9 +26,6 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarToggleContent">
           <ul className="navbar-nav mx-auto nav-link-collection">
-            <form id="search-b">
-              <input type="search" className="search-bar" />
-            </form>
             <li className="nav-item">
               <Link to="/all-blogs" className="nav-link">
                 All Blogs

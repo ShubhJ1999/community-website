@@ -9,7 +9,7 @@ const TopBlogger = () => {
         alt="top-blogger-cover"
         className="w-20 h-20 rounded-full mx-auto top-blogger-cover"
       />
-      <h4>Parth Maru</h4>
+      <h5>Parth Maru</h5>
       <p className="top-blogger-thought">
         "You can't make a fan of everyone. Stay true to your story, characters,
         music, art, or whatever it is you do."

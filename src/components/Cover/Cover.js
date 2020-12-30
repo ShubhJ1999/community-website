@@ -1,5 +1,7 @@
 import React from "react";
-import bg from "../../images/bg.jpg";
+import bg1 from "../../images/bg1.jpg";
+import bg2 from "../../images/bg2.jpg";
+import bg3 from "../../images/bg3.jpg";
 import "./Cover.css";
 
 const Cover = () => {
@@ -13,7 +15,7 @@ const Cover = () => {
         </ul>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={bg} className="cover-back" />
+            <img src={bg1} className="cover-back" />
             <div className="carousel-caption">
               <a className="stretched-link" href="#">
                 <span className="p-2">TECHNOLOGY</span>
@@ -23,7 +25,7 @@ const Cover = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={bg} className="cover-back" />
+            <img src={bg2} className="cover-back" />
             <div className="carousel-caption">
               <a className="stretched-link" href="#">
                 <span className="p-2">TECHNOLOGY</span>
@@ -33,7 +35,7 @@ const Cover = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={bg} className="cover-back" />
+            <img src={bg3} className="cover-back" />
             <div className="carousel-caption">
               <a className="stretched-link" href="#">
                 <span className="p-2">TECHNOLOGY</span>

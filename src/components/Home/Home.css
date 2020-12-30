@@ -1,5 +1,5 @@
 .first-section {
-  margin-top: 10vh;
+  margin-top: 3vh;
   display: flex;
   align-items: center;
 }
@@ -15,7 +15,7 @@
 .recent-post-area {
   flex: 3;
   padding: 1rem;
-  border-right: 1px solid lightgray;
+  /* border-right: 1px solid lightgray; */
 }
 
 .top-blogger-area {
@@ -51,10 +51,14 @@
   }
 
   .popular-main-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .some-main-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .recent-post-area {
+    border: 0;
   }
 }

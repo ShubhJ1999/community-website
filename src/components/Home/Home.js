@@ -17,6 +17,7 @@ const Home = () => {
             <RecentPost />
           </div>
           <div className="top-blogger-area">
+            <h3 className="top-blogger-title">Top Blogger</h3>
             <TopBlogger />
           </div>
         </div>
@@ -30,7 +31,8 @@ const Home = () => {
           <hr className="recent-line" />
           <SomeBlogs />
           <Link to="/all-blogs" className="all-blogs-link">
-            <p>See More...</p>
+            <h5>See More</h5>
+            <hr />
           </Link>
         </div>
       </div>

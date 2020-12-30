@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <footer className="footer-image bg-cover h-auto">
         <div className="h-auto footer-main">
-          <div className="container max-w-6xl mx-auto flex justify-around items-center px-4 py-4">
+          <div className="container max-w-6xl mx-auto flex justify-around items-center pt-3">
             <div className="w-full mx-auto flex flex-wrap items-center mb-0">
               <div
                 className="flex w-full md:w-1/3 justify-center md:justify-start text-white items-center flex justify-center"
@@ -81,9 +81,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <hr className="mx-44" style={{ background: "white" }} />
+          <hr className="mx-36" style={{ background: "white" }} />
 
-          <div className="container max-w-6xl mx-auto flex items-center px-2 py-8">
+          <div className="container max-w-6xl mx-auto flex items-center">
             <div className="w-full mx-auto flex flex-wrap items-center">
               <div
                 className="flex p-4 w-full md:w-1/2 justify-center md:justify-start text-white font-bold list-reset items-center flex justify-center space-x-8 font-bold font-xl"
