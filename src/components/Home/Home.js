@@ -4,14 +4,12 @@ import PopularPost from "../PopularPost/PopularPost";
 import SomeBlogs from "../SomeBlogs/SomeBlogs";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
 import TopBlogger from "../TopBlogger/TopBlogger";
 import Cover from "../Cover/Cover";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
       <Cover />
       <div className="container">
         <div className="first-section">

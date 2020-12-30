@@ -1,82 +1,39 @@
-.cover-imgvk {
-  margin-top: 2rem;
-}
-
-.containervk .warnvk {
-  text-align: center;
-  font-size: 2rem;
-}
-
 .cover-imgvk img {
   object-fit: cover;
   width: 100%;
   height: 30rem;
 }
 
-.nav-pil-manvk .linkvk {
-  text-decoration: none;
-}
-
-.nav-pil-manvk .linkvk:hover {
-  border-bottom: 3px solid dodgerblue;
-}
-
 .containervk {
   display: flex;
-  background: linear-gradient(#f1f6f9, white);
-  border: 1px solid #14274e;
   position: sticky;
-  margin: -7% 8% 3% 8%;
-  padding-bottom: 1%;
+  margin: 0% 15% 3% 15%;
+  align-content: center;
 }
+
 .container-cardvk {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.cat-menuvk {
-  grid-column: 1/-1;
-  margin: 1rem 1rem 0 1rem;
-}
-
-.cat-menuvk ul {
-  text-align: center;
-  position: sticky;
-}
-
-.cat-menuvk ul li {
-  display: inline-block;
-  padding: 1rem 1rem 0 1rem;
-  font-size: 2rem;
-}
-
-.cat-menuvk hr {
-  border: 0.5px solid dodgerblue;
+  grid-template-columns: 1fr 1fr;
 }
 
 .cardvk {
-  box-shadow: 0 0 8px 4px rgba(161, 158, 158, 0.973);
-  border-radius: 1rem;
+  border-radius: 5px;
   position: relative;
   background-color: white;
-  margin: 1rem;
-}
-
-.cardvk:hover {
-  box-shadow: 0 0 10px 5px rgba(161, 158, 158, 0.973);
-  /* transform: scaleY(1.5);*/
+  margin: 2rem;
+  margin-bottom: 0;
+  border: 1px solid rgb(212, 209, 209);
 }
 
 .thumbvk img {
   width: 100%;
-  height: 20rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  height: 15rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .card-bodyvk {
-  margin: 0.5rem 0rem 0.5rem 0.5rem;
-  padding: 5px;
+  margin: 0rem 0rem 0.5rem 0.5rem;
 }
 
 .card-titlevk {
@@ -84,17 +41,8 @@
   font-family: "M PLUS 1p", sans-serif;
 }
 
-.nav-pil-manvk li,
-.card-detailsvk-ul li,
-.card-engvk-ul li {
-  list-style: none;
-  display: inline;
-  color: #9ba4b4;
-  font-family: "Khula", sans-serif;
-}
-
 .card-contentvk p {
-  margin: 0.5rem 0rem 0rem 0rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -105,9 +53,20 @@
   font-family: "PT Sans", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
+.card-detailsvk-ul {
+  color: dodgerblue;
+  font-weight: bold;
+}
+
 @media (max-width: 540px) {
   .container-cardvk {
     grid-template-columns: 1fr;
+    grid-gap: 5px;
+    margin: 1rem;
   }
   .containervk {
     margin: 0;
@@ -115,8 +74,12 @@
   .cover-imgvk img {
     display: none;
   }
-  .cat-menuvk ul li {
-    font-size: 1.5rem;
+  .cardvk {
+    margin: 0rem;
+    margin-bottom: 5px;
+  }
+  .fact-con-cardvk {
+    grid-template-columns: 1fr;
   }
 }
 

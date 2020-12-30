@@ -69,7 +69,7 @@ input[type="search"] {
 
 input[type="search"] {
   background: transparent
-    url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat
+    url("https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png") no-repeat
     9px center;
   border: solid 1px transparent;
   padding: 8px 15px 8px 32px;

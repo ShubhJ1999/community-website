@@ -5,12 +5,14 @@ import AllBlogs from "./components/AllBlogs/AllBlogs";
 import SpecificBlog from "./components/SpecificBlog/SpecificBlog";
 import BlogProvider from "./Context/BlogContext";
 import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <BlogProvider>
       <Router>
         <div className="app">
+          <Navbar />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route exact path="/all-blogs">

@@ -36,7 +36,10 @@
   margin-bottom: 0;
 }
 
-.all-blogs-link {
+.all-blogs-link,
+.all-blogs-link:hover {
+  text-decoration: none;
+  color: dodgerblue;
   display: block;
   margin-top: 1rem;
   text-align: center;

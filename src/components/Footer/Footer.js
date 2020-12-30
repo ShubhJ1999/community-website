@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <footer className="image bg-cover h-auto">
+      <footer className="footer-image bg-cover h-auto">
         <div className="h-auto footer-main">
           <div className="container max-w-6xl mx-auto flex justify-around items-center px-4 py-4">
             <div className="w-full mx-auto flex flex-wrap items-center mb-0">
