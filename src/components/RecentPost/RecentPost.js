@@ -12,7 +12,7 @@ const RecentPost = () => {
         <img src={blogs[0].thumb} alt="recent-img" className="recent-cover" />
       </Link>
       <div className="recent-post-detail">
-        <p>Technology</p>
+        <p>Technology &nbsp; Social</p>
         <Link to={`/specific-blog/${blogs[0].id}`} className="specific-link">
           <h1>{blogs[0].title}</h1>
         </Link>

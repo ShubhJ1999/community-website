@@ -18,7 +18,9 @@ const PopularPost = () => {
             </div>
             <div className="popular-post-details">
               <div className="popular-article-detail">
-                <p className="popular-article-catagory">Technology</p>
+                <p className="popular-article-catagory">
+                  Technology &nbsp; Social
+                </p>
               </div>
               <Link
                 to={`/specific-blog/${item.id}`}

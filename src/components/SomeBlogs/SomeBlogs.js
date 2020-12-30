@@ -13,7 +13,9 @@ const SomeBlogs = () => {
           <div className="some-post-container" key={index}>
             <div className="some-post-details">
               <div className="some-article-detail">
-                <p className="some-article-catagory">Technology</p>
+                <p className="some-article-catagory">
+                  Technology &nbsp; Social
+                </p>
               </div>
               <Link
                 to={`/specific-blog/${item.id}`}

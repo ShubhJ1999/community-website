@@ -25,7 +25,7 @@ const Navbar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarToggleContent">
-          <ul className="navbar-nav mx-auto nav-link-collection">
+          <ul className="navbar-nav ml-36 nav-link-collection">
             <li className="nav-item">
               <Link to="/all-blogs" className="nav-link">
                 All Blogs

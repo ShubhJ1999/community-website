@@ -83,6 +83,10 @@ input[type="search"]:focus {
   background-color: #fff;
 }
 
+#search-b {
+  margin-left: 2rem;
+}
+
 #search-b input[type="search"] {
   width: 15px;
   padding-left: 10px;
