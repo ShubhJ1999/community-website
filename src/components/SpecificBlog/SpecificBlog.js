@@ -41,7 +41,7 @@ const SpecificBlog = () => {
           alt="specific-cover"
         />
 
-        <div className="container content justify-center max-w-5xl mx-auto -mt-44 mb-0">
+        <div className="content justify-center max-w-5xl mx-auto -mt-44 mb-0 specific-blog-area">
           <div className="bg-white w-auto p-5 md:p-24 text-gray-800 leading-normal shadow-md m-5">
             <h1>{specificBlog.blogTitle}</h1>
             <p className="font-normal my-5 ">{specificBlog.blogContent}</p>

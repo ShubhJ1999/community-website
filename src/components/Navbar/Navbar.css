@@ -1,105 +1,136 @@
-/* 
-primary:#14274e;
-seconadry:#394867;
-semi-secondary:#9aa3b3;
-light:#f0f5f8;
-*/
-
-.nav-main {
-  z-index: 100000;
-  width: 100%;
-  background: transparent !important;
-  transition: 0.3s ease;
+.nav-container {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  font-weight: bold;
+  color: white;
 }
 
-.nav-main.active {
-  background-color: black !important;
+.brand-logo {
+  margin-top: auto;
+  margin-left: 9rem;
 }
 
-.navbar-brand {
-  color: white !important;
-  margin-left: 8rem !important;
-}
-
-.nav-item {
-  margin: 0 3rem !important;
+.nav-list-item {
+  list-style-type: none;
+  margin-top: auto;
 }
 
 .nav-link {
-  color: white !important;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+}
+
+.nav-list {
+  display: flex;
+  z-index: 100000;
+  margin: 0.4rem 9rem;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-link:hover {
+  color: white;
   border-bottom: 1px solid white;
-  width: fit-content;
 }
 
-.toggle-area {
-  border-color: white !important;
+.search-area {
+  display: flex;
 }
 
-.toggle-icon {
-  color: white;
-}
-
-.link-color {
-  color: white;
-}
-
-.nav-link-collection > li {
-  margin: 0 2rem;
-}
-
-.write-blog {
-  width: fit-content;
-}
-
-/* Search Bar */
-
-.search-bar {
+.search-b {
+  color: black;
+  padding: 6px;
+  border: none;
+  margin: auto 0.5rem;
+  border-radius: 5px;
   outline: none;
 }
 
-#search-b {
-  margin-left: 3rem;
+.search-bar {
+  display: none;
 }
 
-input[type="search"] {
-  appearance: textfield;
-  box-sizing: content-box;
-  font-family: inherit;
-  font-size: 100%;
+.search-b-mobile {
+  outline: none;
+  color: black;
+  float: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 14px;
 }
 
-input[type="search"] {
-  background: transparent
-    url("https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png") no-repeat
-    9px center;
-  border: solid 1px transparent;
-  padding: 8px 15px 8px 32px;
-  width: 55px;
-  border-radius: 2rem;
-  transition: all 0.5s;
+.write-blog {
+  margin-top: -0.4rem;
 }
 
-input[type="search"]:focus {
-  width: 130px;
-  background-color: #fff;
-}
+@media (max-width: 720px) {
+  .nav-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-#search-b input[type="search"] {
-  width: 15px;
-  padding-left: 10px;
-  color: transparent;
-  cursor: pointer;
-}
-#search-b input[type="search"]:hover {
-  background-color: #fff;
-}
-#search-b input[type="search"]:focus {
-  width: 130px;
-  padding-left: 32px;
-  color: #000;
-  background-color: #fff;
-  cursor: auto;
+  .nav-list {
+    background-color: black;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin: 3.1rem 0;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    left: -100%;
+    transition: all 0.5s ease-out;
+  }
+
+  .nav-list-item {
+    margin: 1.5rem 0;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 5%;
+  }
+
+  .brand-logo {
+    margin: 0.6rem 0;
+  }
+
+  .nav-list.active {
+    left: 0;
+  }
+
+  .search-b {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    border: none;
+  }
+
+  .search-btn-mobile {
+    padding: 1rem;
+    background-color: white;
+    color: black;
+  }
+
+  .search-bar {
+    display: flex;
+  }
 }

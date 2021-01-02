@@ -1,48 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  return (
-    <>
-      <nav className="navbar navbar-expand-lg nav-main active">
-        <Link className="navbar-brand" to="/">
-          Blog-Site
-        </Link>
-        <form id="search-b">
-          <input type="search" className="fas fa-search search-bar" />
-        </form>
-        <button
-          className="navbar-toggler toggle-area"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarToggleContent"
-          aria-controls="navbarToggleContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i className="fas fa-bars toggle-icon"></i>
-        </button>
+  const [tap, setTap] = useState(false);
 
-        <div className="collapse navbar-collapse" id="navbarToggleContent">
-          <ul className="navbar-nav ml-36 nav-link-collection">
-            <li className="nav-item">
-              <Link to="/all-blogs" className="nav-link">
-                All Blogs
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Our Story
-              </Link>
-            </li>
-            <button className="btn btn-success ml-5 write-blog">
-              Write Blog
+  return (
+    <nav className="nav-container">
+      <h2 className="brand-logo">Blog Site</h2>
+      <div className="search-area">
+        <input type="text" placeholder="Search.." className="search-b" />
+        <button type="submit">
+          <i className="fa fa-search"></i>
+        </button>
+      </div>
+
+      <div className="menu-icon" onClick={() => setTap(!tap)}>
+        <i className={tap ? "fas fa-times" : "fas fa-bars"}></i>
+      </div>
+
+      <ul className={tap ? "nav-list active" : "nav-list"}>
+        <li className="nav-list-item">
+          <div className="search-bar">
+            <input
+              type="text"
+              placeholder="Search.."
+              className="search-b-mobile"
+            />
+            <button type="submit" className="search-btn-mobile">
+              <i className="fa fa-search"></i>
             </button>
-          </ul>
-        </div>
-      </nav>
-    </>
+          </div>
+        </li>
+
+        <li className="nav-list-item">
+          <Link
+            className="nav-link"
+            to="/all-blogs"
+            onClick={() => setTap(!tap)}
+          >
+            All Blogs
+          </Link>
+        </li>
+        <li className="nav-list-item">
+          <Link
+            className="nav-link"
+            to="/all-blogs"
+            onClick={() => setTap(!tap)}
+          >
+            Our Story
+          </Link>
+        </li>
+        <li className="nav-list-item">
+          <Link
+            className="nav-link"
+            to="/all-blogs"
+            onClick={() => setTap(!tap)}
+          >
+            <button className="btn btn-success write-blog">Write Blog</button>
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
