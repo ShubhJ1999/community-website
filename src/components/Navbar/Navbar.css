@@ -73,6 +73,12 @@
   margin-top: -0.4rem;
 }
 
+.nav-brand,
+.nav-brand:hover {
+  color: white;
+  text-decoration: none;
+}
+
 @media (max-width: 720px) {
   .nav-container {
     position: relative;
@@ -132,5 +138,9 @@
 
   .search-bar {
     display: flex;
+  }
+
+  .search-area {
+    display: none;
   }
 }

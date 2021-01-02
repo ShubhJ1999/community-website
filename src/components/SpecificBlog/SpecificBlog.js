@@ -6,7 +6,6 @@ import PopularPost from "../PopularPost/PopularPost";
 
 const SpecificBlog = () => {
   const { id } = useParams();
-  //const blogId = parseInt(id);
   const { blogs } = useContext(BlogContext);
 
   const specificBlog = blogs.find((item) => item._id === id);
@@ -41,11 +40,11 @@ const SpecificBlog = () => {
           alt="specific-cover"
         />
 
-        <div className="content justify-center max-w-5xl mx-auto -mt-44 mb-0 specific-blog-area">
-          <div className="bg-white w-auto p-5 md:p-24 text-gray-800 leading-normal shadow-md m-5">
-            <h1>{specificBlog.blogTitle}</h1>
+        <div className="content justify-center max-w-5xl mx-auto -mt-44 mb-0 specific-blog-area specific-content-area-one">
+          <div className="bg-white w-auto p-5 md:p-24 text-gray-800 leading-normal shadow-md m-5 specific-content-area-two">
+            <h1 className="specific-blog-title">{specificBlog.blogTitle}</h1>
             <p className="font-normal my-5 ">{specificBlog.blogContent}</p>
-            <div className="container flex justify-between space-x-1">
+            <div className="container flex justify-between space-x-1 specific-blog-buttons">
               <div className="flex justify-start">
                 <div>
                   <button className="container flex justify-center px-4 pt-6 py-1 text-sm text-black-600 font-semibold border-none hover:border-transparent focus:outline-none transform hover:scale-110 motion-reduce:transform-none">
@@ -122,7 +121,7 @@ const SpecificBlog = () => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container trending-post">
         <h3 className="pop-title">Trending</h3>
         <hr />
         <PopularPost />

@@ -7,7 +7,9 @@ const Navbar = () => {
 
   return (
     <nav className="nav-container">
-      <h2 className="brand-logo">Blog Site</h2>
+      <Link to="/" className="nav-brand">
+        <h2 className="brand-logo">Blog Site</h2>
+      </Link>
       <div className="search-area">
         <input type="text" placeholder="Search.." className="search-b" />
         <button type="submit">

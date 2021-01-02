@@ -50,6 +50,10 @@
     display: none;
   }
 
+  .cover-back {
+    height: 400px;
+  }
+
   .popular-main-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -60,5 +64,22 @@
 
   .recent-post-area {
     border: 0;
+  }
+
+  .image {
+    height: 35vh !important;
+  }
+
+  .specific-content-area-one {
+    margin-top: 1rem !important;
+  }
+
+  .specific-content-area-two {
+    display: contents !important;
+    text-align: justify !important;
+  }
+
+  .specific-blog-buttons {
+    justify-content: space-evenly;
   }
 }

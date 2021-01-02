@@ -10,3 +10,12 @@
   position: relative;
   font-family: "PT Sans", sans-serif;
 }
+
+.specific-blog-title {
+  margin-bottom: -2rem !important;
+  text-align: center !important;
+}
+
+.trending-post {
+  margin-top: 3rem;
+}
