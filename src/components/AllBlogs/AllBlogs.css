@@ -37,9 +37,14 @@
 }
 
 .card-titlevk {
-  margin-top: -1rem;
+  margin-top: 0rem;
   font-size: 1.5em;
   font-family: "M PLUS 1p", sans-serif;
+}
+
+.tLink, .tLink:hover{
+  text-decoration: none;
+  color: black;
 }
 
 .card-contentvk p {
