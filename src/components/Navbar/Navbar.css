@@ -60,6 +60,10 @@ light:#f0f5f8;
   outline: none;
 }
 
+#search-b {
+  margin-left: 3rem;
+}
+
 input[type="search"] {
   appearance: textfield;
   box-sizing: content-box;
@@ -81,10 +85,6 @@ input[type="search"] {
 input[type="search"]:focus {
   width: 130px;
   background-color: #fff;
-}
-
-#search-b {
-  margin-left: 2rem;
 }
 
 #search-b input[type="search"] {

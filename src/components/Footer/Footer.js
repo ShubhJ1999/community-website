@@ -91,19 +91,19 @@ const Footer = () => {
               >
                 <a
                   className="inline-block no-underline hover:text-blue-300 footer-links"
-                  href="#"
+                  href="footer-link-1"
                 >
                   Home
                 </a>
                 <a
                   className="inline-block no-underline hover:text-blue-300 footer-links"
-                  href="#"
+                  href="footer-link-2"
                 >
                   All Blogs
                 </a>
                 <a
                   className="inline-block no-underline hover:text-blue-300 footer-links"
-                  href="#"
+                  href="footer-link-3"
                 >
                   Our Story
                 </a>

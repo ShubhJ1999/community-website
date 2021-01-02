@@ -15,9 +15,9 @@ const Cover = () => {
         </ul>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={bg1} className="cover-back" />
+            <img src={bg1} className="cover-back" alt="carousal-cover-img" />
             <div className="carousel-caption">
-              <a className="stretched-link" href="#">
+              <a className="stretched-link" href="caruosal-cover">
                 <span className="p-2">TECHNOLOGY</span>
                 <span className="p-2">DESIGN</span>
                 <h1>How to Ask Great Questions - Harvard Business ReviewS</h1>
@@ -25,9 +25,9 @@ const Cover = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={bg2} className="cover-back" />
+            <img src={bg2} className="cover-back" alt="cover-back" />
             <div className="carousel-caption">
-              <a className="stretched-link" href="#">
+              <a className="stretched-link" href="caruosal-cover">
                 <span className="p-2">TECHNOLOGY</span>
                 <span className="p-2">DESIGN</span>
                 <h1>How to Ask Great Questions - Harvard Business Review</h1>
@@ -35,9 +35,9 @@ const Cover = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={bg3} className="cover-back" />
+            <img src={bg3} className="cover-back" alt="cover-back" />
             <div className="carousel-caption">
-              <a className="stretched-link" href="#">
+              <a className="stretched-link" href="caruosal-cover">
                 <span className="p-2">TECHNOLOGY</span>
                 <span className="p-2">DESIGN</span>
                 <h1>How to Ask Great Questions - Harvard Business Review</h1>

@@ -10,7 +10,7 @@ const Navbar = () => {
           Blog-Site
         </Link>
         <form id="search-b">
-          <input type="search" className="search-bar" />
+          <input type="search" className="fas fa-search search-bar" />
         </form>
         <button
           className="navbar-toggler toggle-area"
