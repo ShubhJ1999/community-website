@@ -6,10 +6,10 @@ import PopularPost from "../PopularPost/PopularPost";
 
 const SpecificBlog = () => {
   const { id } = useParams();
-  const blogId = parseInt(id);
+  //const blogId = parseInt(id);
   const { blogs } = useContext(BlogContext);
 
-  const specificBlog = blogs.find((item) => item.id === blogId);
+  const specificBlog = blogs.find((item) => item._id === id);
 
   return (
     <>
@@ -27,24 +27,24 @@ const SpecificBlog = () => {
               </span>
             </div>
             <p className="text-sm md:text-base font-bold text-gray-900">
-              - {specificBlog.date} -
+              - 15 Dec -
               <span className="text-sm md:text-base text-gray-900">
-                1 min read
+                {specificBlog.xMinsRead} Min Read
               </span>
             </p>
           </div>
         </div>
 
         <img
-          src={specificBlog.thumb}
+          src="https://images.unsplash.com/photo-1609466686153-8da47ddda47b?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
           className="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded image"
           alt="specific-cover"
         />
 
         <div className="container content justify-center max-w-5xl mx-auto -mt-44 mb-0">
           <div className="bg-white w-auto p-5 md:p-24 text-gray-800 leading-normal shadow-md m-5">
-            <h1>{specificBlog.title}</h1>
-            <p className="font-normal my-5 ">{specificBlog.content}</p>
+            <h1>{specificBlog.blogTitle}</h1>
+            <p className="font-normal my-5 ">{specificBlog.blogContent}</p>
             <div className="container flex justify-between space-x-1">
               <div className="flex justify-start">
                 <div>
