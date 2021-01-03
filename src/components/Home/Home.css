@@ -82,4 +82,9 @@
   .specific-blog-buttons {
     justify-content: space-evenly;
   }
+
+  .nav-brand {
+    margin-top: 0.5rem;
+    margin-left: 7rem !important;
+  }
 }
