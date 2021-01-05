@@ -80,7 +80,17 @@
   }
 
   .specific-blog-buttons {
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+
+  .specific-blog-btn {
+    display: none;
+  }
+
+  .specific-author {
+    display: contents !important;
+
+    /* grid-template-columns: repeat(3, 1fr) !important; */
   }
 
   .nav-brand {

@@ -14,7 +14,7 @@ const SpecificBlog = () => {
     <>
       <div className="bg-white font-sans leading-normal tracking-normal container">
         <div className="text-center items-center justify-center pt-16 md:pt-22 font-medium head">
-          <div className="container flex justify-around font-sans rounded mt-2 p-4 pb-0">
+          <div className="specific-author container flex justify-around font-sans rounded mt-2 p-4 pb-0">
             <div className="flex justify-start space-x-6">
               <img
                 className="w-14 h-14 rounded-full"
@@ -22,7 +22,7 @@ const SpecificBlog = () => {
                 alt="avatar-cover"
               />
               <span className="font-bold break-normal text-2xl md:text-4xl">
-                Post By - {specificBlog.author}
+                Post By - AUTHOR
               </span>
             </div>
             <p className="text-sm md:text-base font-bold text-gray-900">
@@ -47,7 +47,7 @@ const SpecificBlog = () => {
             <div className="container flex justify-between space-x-1 specific-blog-buttons">
               <div className="flex justify-start">
                 <div>
-                  <button className="container flex justify-center px-4 pt-6 py-1 text-sm text-black-600 font-semibold border-none hover:border-transparent focus:outline-none transform hover:scale-110 motion-reduce:transform-none">
+                  <button className="specific-blog-btn container flex justify-center px-4 pt-6 py-1 text-sm text-black-600 font-semibold border-none hover:border-transparent focus:outline-none transform hover:scale-110 motion-reduce:transform-none">
                     <svg
                       className="fill-black text-white h-4"
                       xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ const SpecificBlog = () => {
                   </button>
                 </div>
                 <div>
-                  <button className="container flex justify-center px-4 pt-6 py-1 text-sm text-black-600 font-semibold border-none hover:border-transparent focus:outline-none transform hover:scale-110 motion-reduce:transform-none">
+                  <button className="specific-blog-btn container flex justify-center px-4 pt-6 py-1 text-sm text-black-600 font-semibold border-none hover:border-transparent focus:outline-none transform hover:scale-110 motion-reduce:transform-none">
                     <svg
                       className="fill-black text-white h-4"
                       xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ const SpecificBlog = () => {
                   </button>
                 </div>
                 <div>
-                  <button className="container flex justify-center px-4 pt-6 py-1 text-sm text-black-600 font-semibold border-none hover:border-transparent focus:outline-none transform hover:scale-110 motion-reduce:transform-none">
+                  <button className="specific-blog-btn container flex justify-center px-4 pt-6 py-1 text-sm text-black-600 font-semibold border-none hover:border-transparent focus:outline-none transform hover:scale-110 motion-reduce:transform-none">
                     <svg
                       className="instagram fill-black h-4"
                       viewBox="0 0 22 22"
@@ -81,7 +81,7 @@ const SpecificBlog = () => {
                   </button>
                 </div>
                 <div>
-                  <button className="container flex justify-center px-4 pt-6 py-1 text-sm text-black-600 font-semibold border-none hover:border-transparent focus:outline-none transform hover:scale-110 motion-reduce:transform-none">
+                  <button className="specific-blog-btn container flex justify-center px-4 pt-6 py-1 text-sm text-black-600 font-semibold border-none hover:border-transparent focus:outline-none transform hover:scale-110 motion-reduce:transform-none">
                     <svg
                       className="linkedin fill-black h-4"
                       viewBox="0 0 22 22"
