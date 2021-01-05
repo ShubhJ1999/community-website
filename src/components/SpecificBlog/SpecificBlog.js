@@ -122,7 +122,7 @@ const SpecificBlog = () => {
         </div>
       </div>
       <div className="container trending-post">
-        <h3 className="pop-title">Trending</h3>
+        <h3 className="pop-title">Recommended</h3>
         <hr />
         <PopularPost />
       </div>
