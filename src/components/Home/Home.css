@@ -98,3 +98,14 @@
     margin-left: 7rem !important;
   }
 }
+
+@media (max-width: 1300px) and (min-width: 1038px) {
+  .brand-logo {
+    width: max-content;
+    margin-left: -2rem;
+  }
+  .nav-list-item {
+    width: max-content;
+    margin-left: -2rem;
+  }
+}

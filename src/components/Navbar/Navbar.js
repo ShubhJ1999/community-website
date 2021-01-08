@@ -6,7 +6,7 @@ const Navbar = () => {
   const [tap, setTap] = useState(false);
 
   return (
-    <nav className="nav-container">
+    <nav className="nav-container vh-25">
       <Link to="/" className="nav-brand">
         <h2 className="brand-logo">Blog Site</h2>
       </Link>

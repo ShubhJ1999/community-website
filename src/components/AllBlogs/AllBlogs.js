@@ -6,9 +6,8 @@ import Cover from "../Cover/Cover";
 import { BlogContext } from "../../Context/BlogContext";
 
 function AllBlogs() {
-  
   const { blogs } = useContext(BlogContext);
-  
+
   return (
     <>
       <Cover />
@@ -31,7 +30,11 @@ function AllBlogs() {
                       <li>{a.blogCategory}</li>
                     </ul>
                   </div>
-                  <div className="card-titlevk"><Link className="tLink" to={`/specific-blog/${a._id}`}>{a.blogTitle}</Link></div>
+                  <div className="card-titlevk">
+                    <Link className="tLink" to={`/specific-blog/${a._id}`}>
+                      {a.blogTitle}
+                    </Link>
+                  </div>
                   <div className="card-contentvk">
                     <p>{a.blogContent}</p>
                   </div>

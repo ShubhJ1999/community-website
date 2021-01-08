@@ -10,9 +10,7 @@ const BlogProvider = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get(
-        "https://cors-anywhere.herokuapp.com/https://communitywebsite.herokuapp.com/blogs"
-      )
+      .get("http://dhruvpythondev.pythonanywhere.com/blog/all_blogs/")
       .then((res) => {
         setBlog(res.data);
         setrBlog(res.data[res.data.length - 1]);
