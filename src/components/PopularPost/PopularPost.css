@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   font-family: "PT Sans", sans-serif;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .popular-post-container {

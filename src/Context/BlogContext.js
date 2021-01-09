@@ -12,14 +12,13 @@ const BlogProvider = ({ children }) => {
     axios
       .get("http://dhruvpythondev.pythonanywhere.com/blog/all_blogs/")
       .then((res) => {
-        setBlog(res.data);
-        setrBlog(res.data[res.data.length - 1]);
+        setBlog(res.data.blogs);
+        setrBlog(res.data.blogs[res.data.blogs.length - 1]);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
-
   return (
     <BlogContext.Provider value={{ blogs: Blog, letBlog: rBlog }}>
       {children}

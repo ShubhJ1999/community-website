@@ -7,8 +7,7 @@ import PopularPost from "../PopularPost/PopularPost";
 const SpecificBlog = () => {
   const { id } = useParams();
   const { blogs } = useContext(BlogContext);
-
-  const specificBlog = blogs.find((item) => item._id === id);
+  const specificBlog = blogs.find((item) => item.id === parseInt(id));
 
   return (
     <>
@@ -22,13 +21,13 @@ const SpecificBlog = () => {
                 alt="avatar-cover"
               />
               <span className="font-bold break-normal text-2xl md:text-4xl">
-                Post By - AUTHOR
+                Post By - {specificBlog.author}
               </span>
             </div>
             <p className="text-sm md:text-base font-bold text-gray-900">
               - 15 Dec -
               <span className="text-sm md:text-base text-gray-900">
-                {specificBlog.xMinsRead} Min Read
+                5 Min Read
               </span>
             </p>
           </div>
@@ -42,8 +41,8 @@ const SpecificBlog = () => {
 
         <div className="content justify-center max-w-5xl mx-auto -mt-44 mb-0 specific-blog-area specific-content-area-one">
           <div className="bg-white w-auto p-5 md:p-24 text-gray-800 leading-normal shadow-md m-5 specific-content-area-two">
-            <h1 className="specific-blog-title">{specificBlog.blogTitle}</h1>
-            <p className="font-normal my-5 ">{specificBlog.blogContent}</p>
+            <h1 className="specific-blog-title">{specificBlog.title}</h1>
+            <p className="font-normal my-5 ">{specificBlog.content}</p>
             <div className="container flex justify-between space-x-1 specific-blog-buttons">
               <div className="flex justify-start">
                 <div>

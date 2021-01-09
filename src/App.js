@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
     <BlogProvider>
-      <Router>
+      <Router onUpdate={() => window.scrollTo(0, 0)}>
         <div className="app">
           <Navbar />
           <Switch>
