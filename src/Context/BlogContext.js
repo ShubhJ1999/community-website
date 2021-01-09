@@ -10,7 +10,7 @@ const BlogProvider = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get("http://dhruvpythondev.pythonanywhere.com/blog/all_blogs/")
+      .get("https://dhruvpythondev.pythonanywhere.com/blog/all_blogs/")
       .then((res) => {
         setBlog(res.data.blogs);
         setrBlog(res.data.blogs[res.data.blogs.length - 1]);
