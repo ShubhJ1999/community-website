@@ -17,7 +17,7 @@ function AllBlogs() {
             return (
               <div className="cardvk" key={key}>
                 <div className="thumbvk">
-                  <Link to={`/specific-blog/${a._id}`}>
+                  <Link to={`/specific-blog/${a.id}`}>
                     <img
                       src="https://images.unsplash.com/photo-1609238642088-26031d126e37?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4MXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                       alt="card-thumb-img"
@@ -27,18 +27,18 @@ function AllBlogs() {
                 <div className="card-bodyvk">
                   <div className="card-detailsvk">
                     <ul className="card-detailsvk-ul">
-                      <li>{a.blogCategory}</li>
+                      <li>{a.slug}</li>
                     </ul>
                   </div>
                   <div className="card-titlevk">
                     <Link className="tLink" to={`/specific-blog/${a._id}`}>
-                      {a.blogTitle}
+                      {a.title}
                     </Link>
                   </div>
                   <div className="card-contentvk">
-                    <p>{a.blogContent}</p>
+                    <p>{a.content}</p>
                   </div>
-                  15 Dec • {a.xMinsRead} Min Read
+                  15 Dec • 5 Min Read
                 </div>
               </div>
             );
