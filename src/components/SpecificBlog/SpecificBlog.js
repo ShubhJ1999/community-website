@@ -34,9 +34,9 @@ const SpecificBlog = () => {
         </div>
 
         <img
-          src="https://images.unsplash.com/photo-1609466686153-8da47ddda47b?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          src={`https://dhruvpythondev.pythonanywhere.com${specificBlog.image_url}`}
+          alt={specificBlog.title}
           className="container w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded image"
-          alt="specific-cover"
         />
 
         <div className="content justify-center max-w-5xl mx-auto -mt-44 mb-0 specific-blog-area specific-content-area-one">

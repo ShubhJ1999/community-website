@@ -1,29 +1,52 @@
-import React, { createContext, useEffect, useState } from "react";
-import axios from "axios";
-//import { Blog } from "../constants/BlogData";
+import React, { useContext } from "react";
+import "./AllBlogs.css";
+//import { Blog } from "../../constants/BlogData";
+import { Link } from "react-router-dom";
+import Cover from "../Cover/Cover";
+import { BlogContext } from "../../Context/BlogContext";
 
-export const BlogContext = createContext();
+function AllBlogs() {
+  const { blogs } = useContext(BlogContext);
 
-const BlogProvider = ({ children }) => {
-  const [Blog, setBlog] = useState([]);
-  const [rBlog, setrBlog] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get("https://dhruvpythondev.pythonanywhere.com/blog/all_blogs/")
-      .then((res) => {
-        setBlog(res.data.blogs);
-        setrBlog(res.data.blogs[res.data.blogs.length - 1]);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
   return (
-    <BlogContext.Provider value={{ blogs: Blog, letBlog: rBlog }}>
-      {children}
-    </BlogContext.Provider>
+    <>
+      <Cover />
+      <div className="containervk">
+        <div className="container-cardvk">
+          {blogs.map((a, key) => {
+            return (
+              <div className="cardvk" key={key}>
+                <div className="thumbvk">
+                  <Link to={`/specific-blog/${a.id}`}>
+                  <img
+                    src={`https://dhruvpythondev.pythonanywhere.com${a.image_url}`}
+                    alt={a.title}
+                    />
+                  </Link>
+                </div>
+                <div className="card-bodyvk">
+                  <div className="card-detailsvk">
+                    <ul className="card-detailsvk-ul">
+                      <li>{a.slug}</li>
+                    </ul>
+                  </div>
+                  <div className="card-titlevk">
+                    <Link className="tLink" to={`/specific-blog/${a._id}`}>
+                      {a.title}
+                    </Link>
+                  </div>
+                  <div className="card-contentvk">
+                    <p>{a.content}</p>
+                  </div>
+                  15 Dec • 5 Min Read
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </>
   );
-};
+}
 
-export default BlogProvider;
+export default AllBlogs;

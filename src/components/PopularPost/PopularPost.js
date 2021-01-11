@@ -15,8 +15,8 @@ const PopularPost = () => {
             <div className="popular-post-img">
               <Link to={`/specific-blog/${item.id}`}>
                 <img
-                  src="https://images.unsplash.com/photo-1602526212101-12eb978b129a?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                  alt="img"
+                  src={`https://dhruvpythondev.pythonanywhere.com${item.image_url}`}
+                  alt={item.title}
                   className="popular-image"
                 />
               </Link>

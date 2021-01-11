@@ -27,9 +27,9 @@ const SomeBlogs = () => {
             </div>
             <div className="some-post-img">
               <Link to={`/specific-blog/${item.id}`}>
-                <img
-                  src="https://images.unsplash.com/photo-1609507719752-c5ee71ef1705?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-                  alt="img"
+              <img
+                  src={`https://dhruvpythondev.pythonanywhere.com${item.image_url}`}
+                  alt={item.title}
                   className="some-image"
                 />
               </Link>
