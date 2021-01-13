@@ -18,9 +18,9 @@ function AllBlogs() {
               <div className="cardvk" key={key}>
                 <div className="thumbvk">
                   <Link to={`/specific-blog/${a.id}`}>
-                  <img
-                    src={`https://dhruvpythondev.pythonanywhere.com${a.image_url}`}
-                    alt={a.title}
+                    <img
+                      src={`https://dhruvpythondev.pythonanywhere.com${a.image_url}`}
+                      alt={a.title}
                     />
                   </Link>
                 </div>

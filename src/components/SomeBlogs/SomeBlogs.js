@@ -8,8 +8,7 @@ const SomeBlogs = () => {
 
   return (
     <div className="some-main-container">
-      {/* {blogs.slice(0, 6).map((item, index) => { */}
-      {blogs.map((item, index) => {
+      {blogs.slice(0, 6).map((item, index) => {
         return (
           <div className="some-post-container" key={index}>
             <div className="some-post-details">
@@ -27,7 +26,7 @@ const SomeBlogs = () => {
             </div>
             <div className="some-post-img">
               <Link to={`/specific-blog/${item.id}`}>
-              <img
+                <img
                   src={`https://dhruvpythondev.pythonanywhere.com${item.image_url}`}
                   alt={item.title}
                   className="some-image"

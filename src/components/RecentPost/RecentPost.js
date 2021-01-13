@@ -8,7 +8,7 @@ const RecentPost = () => {
   return (
     <div className="recent-post">
       <Link to={`/specific-blog/${letBlog.id}`}>
-      <img
+        <img
           src={`https://dhruvpythondev.pythonanywhere.com${letBlog.image_url}`}
           alt={letBlog.title}
           className="recent-cover"

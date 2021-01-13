@@ -8,8 +8,7 @@ const PopularPost = () => {
 
   return (
     <div className="popular-main-container">
-      {/* {blogs.slice(0, 4).map((item, index) => { */}
-      {blogs.map((item, index) => {
+      {blogs.slice(0, 4).map((item, index) => {
         return (
           <div className="popular-post-container" key={index}>
             <div className="popular-post-img">
