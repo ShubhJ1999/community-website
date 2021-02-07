@@ -31,7 +31,7 @@ const Home = () => {
           <hr className="recent-line" />
           <SomeBlogs />
           <Link to="/all-blogs" className="all-blogs-link">
-            <h5>See More</h5>
+            <h5 className="see-more">See More</h5>
           </Link>
         </div>
       </div>
