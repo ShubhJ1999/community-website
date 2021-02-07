@@ -32,7 +32,6 @@ const Home = () => {
           <SomeBlogs />
           <Link to="/all-blogs" className="all-blogs-link">
             <h5>See More</h5>
-            <hr />
           </Link>
         </div>
       </div>
