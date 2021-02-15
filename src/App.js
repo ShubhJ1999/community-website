@@ -5,14 +5,14 @@ import AllBlogs from "./components/AllBlogs/AllBlogs";
 import SpecificBlog from "./components/SpecificBlog/SpecificBlog";
 import BlogProvider from "./Context/BlogContext";
 import Footer from "./components/Footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <BlogProvider>
       <Router onUpdate={() => window.scrollTo(0, 0)}>
         <div className="app">
-          <Navbar />
+          <Header />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/all-blogs" component={AllBlogs} exact />

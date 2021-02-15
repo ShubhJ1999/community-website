@@ -42,7 +42,8 @@
   font-family: "M PLUS 1p", sans-serif;
 }
 
-.tLink, .tLink:hover{
+.tLink,
+.tLink:hover {
   text-decoration: none;
   color: black;
 }
