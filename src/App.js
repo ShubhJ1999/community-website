@@ -6,6 +6,7 @@ import SpecificBlog from "./components/SpecificBlog/SpecificBlog";
 import BlogProvider from "./Context/BlogContext";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import WriteBlog from "./components/WriteBlog/WriteBlog";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/all-blogs" component={AllBlogs} exact />
             <Route path="/specific-blog/:id" component={SpecificBlog} exact />
+            <Route path="/write-blog" component={WriteBlog} exact />
           </Switch>
         </div>
       </Router>

@@ -36,9 +36,11 @@ const Header = () => {
         <Link to="/all-blogs" className="header__link">
           <h5 className="header__item">Our Story</h5>
         </Link>
-        <button className="header__writeBlog">
-          <h5>Write Blog</h5>
-        </button>
+        <Link to="/write-blog" className="header__link">
+          <button className="header__writeBlog">
+            <h5>Write Blog</h5>
+          </button>
+        </Link>
       </div>
     </div>
   );
